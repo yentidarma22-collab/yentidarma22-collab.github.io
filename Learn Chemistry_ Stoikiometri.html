@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost/codingprojek/index.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Chemistry: Stoikiometri</title>
+    <link href="./Learn Chemistry_ Stoikiometri_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS DITEMPATKAN DI SINI */
+        :root {
+            --bs-blue-sky: #87CEEB;
+            --bs-cream: #FFFDD0;
+            --bs-navy: #191970;
+            --bs-light-cream: #FFFDEE;
+        }
+
+        body {
+            background-color: var(--bs-light-cream);
+            color: var(--bs-navy);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--bs-blue-sky);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--bs-navy) !important;
+            font-weight: 600;
+        }
+
+        .slide-section {
+            padding: 60px 0;
+            min-height: 80vh;
+            border-bottom: 5px solid var(--bs-blue-sky);
+        }
+
+        .slide-title {
+            color: var(--bs-navy);
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            background-color: var(--bs-cream);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid var(--bs-blue-sky);
+        }
+        
+        .main-header {
+            text-align: center;
+            padding: 40px 0 20px;
+            background-color: var(--bs-cream);
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .main-header h1 {
+            font-size: 3.5rem;
+            color: var(--bs-blue-sky);
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-header p {
+            font-size: 1.5rem;
+            color: var(--bs-navy);
+            font-style: italic;
+        }
+
+        .content-card {
+            background-color: white;
+            border: 1px solid var(--bs-blue-sky);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background-color: var(--bs-cream);
+            border-left: 5px solid var(--bs-blue-sky);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .formula {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 1.2rem;
+            color: #d9534f; 
+            background-color: #f9f9f9;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid var(--bs-blue-sky);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://localhost/codingprojek/index.html">🧪 Stoikiometri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://localhost/codingprojek/index.html">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/codingprojek/slide_2_mol.html">Konsep Mol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/codingprojek/slide_3_hukum.html">Hukum Dasar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/codingprojek/slide_4_perhitungan.html">Perhitungan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="pendahuluan" class="slide-section">
+        <div class="container">
+            <div class="main-header">
+                <h1>LEARN CHEMISTRY</h1>
+                <p>By: Yenti Darma Pratiwi</p>
+                <hr style="width: 50%; margin: 20px auto; border-color: var(--bs-blue-sky);">
+            </div>
+            
+            <h2 class="text-center slide-title">🌟 Pendahuluan: Apa Itu Stoikiometri?</h2>
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-7">
+                    <div class="content-card">
+                        <h3>Definisi</h3>
+                         <p>Stoikiometri adalah cabang ilmu kimia yang mempelajari hubungan kuantitatif antara reaktan (pereaksi) dan produk (hasil reaksi) dalam suatu reaksi kimia. 🧪</p>
+                        <p> 🧐 Poin Penting Stoikiometri</p>
+						<p>Secara sederhana, stoikiometri memungkinkan kita untuk:
+							Menghitung jumlah zat (massa, mol, volume) yang dibutuhkan atau dihasilkan dalam suatu reaksi.
+							Memastikan bahwa hukum-hukum dasar kimia, seperti Hukum Kekekalan Massa (massa total zat sebelum dan sesudah reaksi adalah sama), terpenuhi.</p>
+						<p> ⚗️Konsep Dasar</p>
+                        <p>Konsep inti dalam stoikiometri melibatkan penggunaan perbandingan koefisien dari zat-zat dalam persamaan reaksi kimia yang sudah setara. Perbandingan koefisien ini menunjukkan perbandingan jumlah mol dari reaktan dan produk.</p>
+						<p>Sederhananya stoikiometri adalah dasar untuk berbagai perhitungan dalam kimia, mulai dari menentukan pereaksi pembatas hingga menghitung rendemen suatu reaksi.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="image-container">
+                        <img src="./Learn Chemistry_ Stoikiometri_files/foto.jpeg" ="img-fluid"="">
+                        <small class="text-muted d-block mt-2">Seseorang sedang melakukan kegiatan praktikum..</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4" style="background-color: var(--bs-blue-sky); color: var(--bs-navy);">
+        <p>© 2025 Belajar Stoikiometri.By; Yenti Darma Pratiwi. Lanjut ke <a href="http://localhost/codingprojek/slide_2_mol.html" style="color: var(--bs-navy); font-weight: bold;">Konsep Mol</a>.</p>
+    </footer>
+
+    <script src="./Learn Chemistry_ Stoikiometri_files/bootstrap.bundle.min.js.download"></script>
+
+</body></html>
