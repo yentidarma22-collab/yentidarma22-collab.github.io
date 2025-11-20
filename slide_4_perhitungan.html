@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan - Stoikiometri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style> /* ... (Salin CSS dari index.html di sini) ... */
+        :root {
+            --bs-blue-sky: #87CEEB;
+            --bs-cream: #FFFDD0;
+            --bs-navy: #191970;
+            --bs-light-cream: #FFFDEE;
+        }
+
+        body {
+            background-color: var(--bs-light-cream);
+            color: var(--bs-navy);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--bs-blue-sky);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--bs-navy) !important;
+            font-weight: 600;
+        }
+
+        .slide-section {
+            padding: 60px 0;
+            min-height: 80vh; 
+            border-bottom: 5px solid var(--bs-blue-sky);
+        }
+
+        .slide-title {
+            color: var(--bs-navy);
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            background-color: var(--bs-cream);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid var(--bs-blue-sky);
+        }
+        
+        .content-card {
+            background-color: white;
+            border: 1px solid var(--bs-blue-sky);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background-color: var(--bs-cream);
+            border-left: 5px solid var(--bs-blue-sky);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .formula {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 1.2rem;
+            color: #d9534f; 
+            background-color: #f9f9f9;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid var(--bs-blue-sky);
+        }
+        
+        /* Gaya untuk Kontainer Video (Dibuat responsif dan di tengah) */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 10px;
+            margin: 20px auto; /* Di tengah */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🧪 Stoikiometri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="slide_2_mol.html">Konsep Mol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="slide_3_hukum.html">Hukum Dasar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="slide_4_perhitungan.html">Perhitungan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="perhitungan" class="slide-section">
+        <div class="container">
+            <h2 class="text-center slide-title">🧮 Perhitungan Stoikiometri</h2>
+            
+            <div class="row mt-5 align-items-center">
+                
+                <div class="col-md-7">
+                    <div class="content-card">
+                        <h3>Penentuan Pereaksi Pembatas</h3>
+                        <p>Untuk menentukan pereaksi pembatas, bagi mol setiap pereaksi dengan koefisiennya masing-masing dalam persamaan reaksi yang sudah setara. Pereaksi yang menghasilkan nilai terkecil dari hasil pembagian ini adalah pereaksi pembatas, karena zat inilah yang akan habis terlebih dahulu dan membatasi jumlah produk yang terbentuk.</p>
+						<p><b>Langkah-langkah menentukan pereaksi pembatas :</b></p>
+						<p>1.Tuliskan persamaan reaksi yang setara: Pastikan persamaan reaksi kimia sudah seimbang untuk mendapatkan koefisien yang benar.</p>
+						<p>2.Hitung jumlah mol setiap pereaksi: Jika belum diketahui, hitung mol pereaksi dari massa dan massa molarnya.</p>
+						<p>  mol : massa/ massa x molar </p>
+						<p>3.Bagi mol dengan koefisiennya : jumlah mol setiap pereaksi dengan koefisiennya dalam persamaan reaksi yang setara.</P>
+						<p>4.Identifikasi pereaksi pembatas: Pereaksi yang hasil pembagiannya paling kecil adalah pereaksi pembatas.</p>
+                    </div>
+                </div> 
+
+                <div class="col-md-5">
+                      <div class="image-container">
+                        <img src="foto4.jpeg" alt="Ilustrasi seseorang sedang mengerjakan perhitungan" class="img-fluid">
+                        <small class="text-muted d-block mt-2">Ilustrasi mengenai perhitungan stoikiometri.</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4"> 
+                <div class="col-md-12">
+                    <div class="highlight-box">
+                        <h4>💡 Contoh Soal  Stoikiometri</h4>
+						<p> Berapakah jumlah molekul dari 0,6 mol gas SO<sub>2</sub>
+						<p> Penyelesaian</p>
+						<p>Diketahui:</p>
+							<p> - Konstanta Avogadro adalah 6,022x 10<sup>23</sup></p>
+							<p> - jumlah molekul SO<SUB>2</SUB> adalah 0,6 mol</p>
+						<p> Ditanya : jumlah molekul ?
+						<p> Jawab : Jumlah molekul = Konstanta Avogadro x Jumlah Mol </p>
+											   <p> = 6,022x10<sup>23</sup> x 0,6 mol
+											   <p> = 3,6132 x 10<sup>23</sup> molekul
+						<p> Jadi  jumlah molekul dari 0,6 mol gas SO<Sub>2</Sub> adalah 3,6132x10<sup>23</sup> molekul.
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5" style="border-color: var(--bs-blue-sky);">
+            <p class="text-center mb-4"> penjelasan lebih lengkap mengenai stoikiometri dapat dilihat dibawah ini:</p>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8"> <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/TU2HplKBejo?start=120&end=180&autoplay=0" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-center py-4" style="background-color: var(--bs-blue-sky); color: var(--bs-navy);">
+        <p>&copy; 2025 Belajar Stoikiometri.By; Yenti Darma Pratiwi.Selesai. Kembali ke <a href="index.html" style="color: var(--bs-navy); font-weight: bold;">Pendahuluan</a>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

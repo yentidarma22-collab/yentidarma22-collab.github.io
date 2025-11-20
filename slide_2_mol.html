@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsep Mol - Stoikiometri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style> /* ... (Salin CSS dari index.html di sini) ... */
+        :root {
+            --bs-blue-sky: #87CEEB;
+            --bs-cream: #FFFDD0;
+            --bs-navy: #191970;
+            --bs-light-cream: #FFFDEE;
+        }
+
+        body {
+            background-color: var(--bs-light-cream);
+            color: var(--bs-navy);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--bs-blue-sky);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--bs-navy) !important;
+            font-weight: 600;
+        }
+
+        .slide-section {
+            padding: 60px 0;
+            min-height: 80vh;
+            border-bottom: 5px solid var(--bs-blue-sky);
+        }
+
+        .slide-title {
+            color: var(--bs-navy);
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            background-color: var(--bs-cream);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid var(--bs-blue-sky);
+        }
+        
+        .content-card {
+            background-color: white;
+            border: 1px solid var(--bs-blue-sky);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background-color: var(--bs-cream);
+            border-left: 5px solid var(--bs-blue-sky);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+		
+
+        .formula {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 1.2rem;
+            color: #d9534f; 
+            background-color: #f9f9f9;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid var(--bs-blue-sky);
+        }
+        
+        /* Gaya untuk Kontainer Video (Dibuat responsif dan di tengah) */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 10px;
+            margin: 20px auto; /* Di tengah */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🧪 Stoikiometri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="slide_2_mol.html">Konsep Mol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="slide_3_hukum.html">Hukum Dasar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="slide_4_perhitungan.html">Perhitungan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="mol" class="slide-section">
+        <div class="container">
+            <h2 class="text-center slide-title">⚗️ Konsep Mol & Massa Molar</h2>
+            <div class="row mt-5">
+                
+                <div class="col-md-6">
+                    <div class="content-card">
+                        <h3>1. Mol: Satuan Jumlah Zat</h3>
+                        <p>Mol adalah satuan SI untuk jumlah zat. Satu mol didefinisikan sebagai jumlah zat yang mengandung partikel sebanyak **Bilangan Avogadro** ($6.022 \times 10^{23}$).</p>
+                        <p class="formula">1 mol = 6,022x 10<sup>23</sup> partikel</p>
+                    </div>
+                    <div class="content-card mt-4">
+                        <h3>2. Massa Molar (Mr/Ar)</h3>
+                        <p>Massa molar adalah massa (dalam gram) dari 1 mol zat. Nilainya sama dengan Ar atau Mr.</p>
+						<p>Massa Atom Relatif (Ar) adalah perbandingan massa rata-rata satu atom unsur dengan (1/12) massa atom karbon-12.</p>
+						<p>Nilai Ar suatu unsur biasanya dapat ditemukan pada tabel periodik.Contoh: Ar untuk karbon (C) adalah 12, dan Ar untuk hidrogen (H) adalah 1.</p>
+						<p>Massa Molekul Relatif (Mr) adalah jumlah total massa atom relatif (Ar) semua atom yang membentuk suatu molekul.Perhitungan: Untuk menghitung Mr, kalikan Ar setiap atom dengan jumlah atomnya dalam molekul, lalu jumlahkan semua hasilnya.
+						<p>Rumus: Mr= Σ (Ar x jumlah atom).</p>
+						<p> Contoh soal: Untuk molekul metana (CH <sub>4</sub>)</P>
+						<p> Mr CH<sub>4</sub> = Ar C + 4 x Ar H)
+						<p> Mr CH<sub>4</sub  = 12+(4 x 1)=16) 
+                        <div class="highlight-box">
+                            <p><strong>Rumus Konversi:</strong></p>
+                            <p class="formula">Mol (n) = Massa (gram)/Massa Molar (g/mol)</p>
+							<p>Contoh soal: Berapa mol NaOH jika diketahiu massa 10 gram dan Mr NaOH adalah 40 g/mol.</p>
+							<p>Penyelesaian:</p>
+							<p>Massa(m):10 gram</p>
+							<p>Mr NaOH : 40 g/mol</p>
+							<p> jawab : </p>
+							<p> n : m/Mr
+							<p> n : 10 g/ 40 g/mol </p>
+							<p> n : 0,25 mol</p>
+							<p> Jadi, jumlah mol NaOH adalah 0,25 mol.
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="foto2.jpeg" alt="Ilustrasi terjadinya reaksi kimia" class="img-fluid">
+                        <small class="text-muted d-block mt-2">Sebuah ilustrasi terjadinya reaksi kimia.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5" style="border-color: var(--bs-blue-sky);">
+            <p class="text-center mb-4"> Berikut ini link pembelajaran untuk menambah wawasan pembaca:</p>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8"> <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/7EAidaDEd48" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-center py-4" style="background-color: var(--bs-blue-sky); color: var(--bs-navy);">
+        <p>&copy; 2025 Belajar Stoikiometri.By; Yenti Darma Pratiwi. Lanjut ke <a href="slide_3_hukum.html" style="color: var(--bs-navy); font-weight: bold;">Hukum Dasar</a>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
